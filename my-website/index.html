@@ -1,0 +1,882 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" />
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0" />
+
+<title>
+Dr. Amit Sonawane | Psychiatrist in Navi Mumbai
+</title>
+
+<meta name="description"
+content="Dr. Amit Sonawane - Consultant Psychiatrist in Navi Mumbai. Expert treatment for anxiety, depression, addiction, stress, OCD, sleep disorders and mental health conditions." />
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+:root{
+--primary:#0f2a3f;
+--accent:#7aa641;
+--light:#f7fafc;
+--text:#2c3e50;
+--white:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+html,body{
+overflow-x:hidden;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:var(--light);
+color:var(--text);
+line-height:1.6;
+font-size:16px;
+}
+
+/* HEADER */
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(255,255,255,0.96);
+backdrop-filter:blur(10px);
+padding:14px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 12px rgba(0,0,0,0.06);
+}
+
+.logo{
+font-weight:700;
+font-size:1rem;
+color:var(--primary);
+}
+
+.header-btn{
+background:var(--accent);
+color:white;
+padding:10px 16px;
+border-radius:30px;
+text-decoration:none;
+font-size:0.9rem;
+font-weight:600;
+transition:0.3s ease;
+white-space:nowrap;
+}
+
+.header-btn:hover{
+transform:translateY(-2px);
+}
+
+/* INDEX NAVIGATION */
+
+.index-nav{
+position:sticky;
+top:68px;
+z-index:999;
+background:white;
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+padding:12px 10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.04);
+}
+
+.index-nav a{
+text-decoration:none;
+color:var(--primary);
+font-size:0.92rem;
+font-weight:600;
+padding:10px 18px;
+border-radius:30px;
+transition:0.3s ease;
+white-space:nowrap;
+}
+
+.index-nav a:hover{
+background:var(--accent);
+color:white;
+}
+
+/* HERO */
+
+.hero{
+min-height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px 20px;
+color:white;
+
+background:
+linear-gradient(rgba(15,42,63,0.82),
+rgba(15,42,63,0.82)),
+
+url('https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg');
+
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+max-width:700px;
+}
+
+.hero h1{
+font-size:2.4rem;
+line-height:1.2;
+margin-bottom:15px;
+font-weight:700;
+}
+
+.hero span{
+color:#9fd14d;
+}
+
+.hero p{
+font-size:1.05rem;
+opacity:0.95;
+margin-bottom:30px;
+}
+
+.hero-buttons{
+display:flex;
+gap:15px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.cta{
+padding:14px 28px;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s ease;
+min-height:52px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.call{
+background:var(--accent);
+color:white;
+}
+
+.call:hover{
+transform:translateY(-2px);
+}
+
+.whatsapp{
+border:1px solid rgba(255,255,255,0.4);
+color:white;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(5px);
+}
+
+.whatsapp:hover{
+background:white;
+color:var(--primary);
+}
+
+/* SECTIONS */
+
+section{
+padding:70px 20px;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+}
+
+/* ABOUT */
+
+.about{
+background:white;
+}
+
+.about-wrapper{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.about h2{
+font-size:2rem;
+margin-bottom:10px;
+color:var(--primary);
+}
+
+/* SERVICES */
+
+.services h2{
+text-align:center;
+margin-bottom:40px;
+font-size:2rem;
+color:var(--primary);
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 6px 18px rgba(0,0,0,0.05);
+transition:0.3s ease;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:22px;
+}
+
+.card h3{
+margin-bottom:10px;
+color:var(--primary);
+}
+
+/* WHY */
+
+.why{
+background:#eef3f6;
+text-align:center;
+}
+
+.why h2{
+margin-bottom:35px;
+font-size:2rem;
+color:var(--primary);
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.feature{
+background:white;
+padding:25px;
+border-radius:15px;
+font-weight:600;
+box-shadow:0 4px 12px rgba(0,0,0,0.04);
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+background:white;
+}
+
+.testimonials h2{
+text-align:center;
+margin-bottom:35px;
+font-size:2rem;
+color:var(--primary);
+}
+
+.testimonial-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.testimonial{
+background:#f7fafc;
+padding:25px;
+border-radius:15px;
+font-style:italic;
+}
+
+/* CONTACT */
+
+.contact h2{
+text-align:center;
+margin-bottom:35px;
+font-size:2rem;
+color:var(--primary);
+}
+
+.contact-wrapper{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.contact-box{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 4px 12px rgba(0,0,0,0.05);
+font-size:0.95rem;
+}
+
+.social-icons{
+display:flex;
+gap:18px;
+align-items:center;
+margin-top:10px;
+}
+
+.social-icons a{
+font-size:30px;
+text-decoration:none;
+transition:0.3s ease;
+}
+
+.social-icons a:hover{
+transform:translateY(-3px);
+}
+
+.instagram{
+color:#E1306C;
+}
+
+.facebook{
+color:#1877F2;
+}
+
+.google{
+color:#DB4437;
+}
+
+.linkedin{
+color:#0A66C2;
+}
+
+iframe{
+width:100%;
+height:350px;
+border:none;
+border-radius:18px;
+}
+
+/* FOOTER */
+
+footer{
+background:var(--primary);
+color:white;
+text-align:center;
+padding:30px 20px;
+font-size:0.9rem;
+}
+
+/* FLOATING WHATSAPP */
+
+.float-whatsapp{
+position:fixed;
+right:18px;
+bottom:20px;
+background:#25D366;
+color:white;
+width:58px;
+height:58px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+z-index:1000;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+body{
+font-size:15px;
+}
+
+header{
+padding:12px 15px;
+}
+
+.logo{
+font-size:0.9rem;
+}
+
+.header-btn{
+padding:8px 14px;
+font-size:0.82rem;
+}
+
+.hero{
+min-height:78vh;
+padding:30px 18px;
+}
+
+.hero h1{
+font-size:1.8rem;
+}
+
+.hero p{
+font-size:0.96rem;
+}
+
+.hero-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.cta{
+width:100%;
+max-width:300px;
+}
+
+.about-wrapper,
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+section{
+padding:50px 18px;
+}
+
+.index-nav{
+top:64px;
+overflow-x:auto;
+justify-content:flex-start;
+padding-left:15px;
+flex-wrap:nowrap;
+scrollbar-width:none;
+}
+
+.index-nav::-webkit-scrollbar{
+display:none;
+}
+
+.index-nav a{
+font-size:0.85rem;
+padding:9px 15px;
+}
+
+.about h2,
+.services h2,
+.why h2,
+.testimonials h2,
+.contact h2{
+font-size:1.7rem;
+}
+
+.card img{
+height:200px;
+}
+
+iframe{
+height:300px;
+}
+
+.float-whatsapp{
+width:54px;
+height:54px;
+font-size:24px;
+right:14px;
+bottom:16px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Dr. Amit Sonawane | Consultant Psychiatrist
+</div>
+
+<a href="tel:+917977745715"
+class="header-btn">
+Book Appointment
+</a>
+
+</header>
+
+<nav class="index-nav">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#why">Why Us</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>
+Compassionate Psychiatric Care<br>
+<span>For Lasting Recovery</span>
+</h1>
+
+<p>
+For expert, scientific, evidence-based, comprehensive and holistic treatment for all psychiatric and mental health related problems in Navi Mumbai.
+</p>
+
+<div class="hero-buttons">
+
+<a href="tel:+917977745715"
+class="cta call">
+Call Now
+</a>
+
+<a href="https://wa.me/917977745715"
+class="cta whatsapp">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="about-wrapper">
+
+<div>
+
+<img
+src="https://lh3.googleusercontent.com/p/AF1QipN5NzrEDCXz8wIBnBCqWcisp1J2D971Oy6V5TnH=s1360-w1360-h1020-rw"
+
+alt="Dr Amit Sonawane"
+
+loading="lazy">
+
+</div>
+
+<div>
+
+<h2>Dr. Amit Sonawane</h2>
+
+<p>
+<strong>MBBS, MD (Psychiatry)</strong>
+</p>
+
+<p>
+<strong>Fellowship in De-addiction Psychiatry</strong>
+</p>
+
+<p>
+<strong>Certified CBT Practitioner — Beck Institute, USA</strong>
+</p>
+
+<br>
+
+<p>
+With over 11 years of experience in the field of psychiatry, Dr. Amit Sonawane is known for his calm, empathetic, and non-judgmental approach towards patients facing a wide range of mental health challenges.</p>
+
+<p>
+He has extensive clinical experience in the diagnosis and treatment of conditions such as depression, anxiety disorders, OCD, schizophrenia, bipolar disorders, sexual disorders, sleep disorders, eating disorders, child and adolescent mental health problems.</p>
+
+<p>
+He has a special interest in addiction psychiatry and has received specialized formal training in the treatment of various addictions, including alcohol, cannabis, tobacco, drugs, gambling, and mobile/internet addiction.</p>
+
+<p>
+He is committed to providing evidence-based, compassionate, and individualized care tailored to each patient’s unique needs.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="services" id="services">
+
+<div class="container">
+
+<h2>Services</h2>
+
+<div class="service-grid">
+
+<div class="card">
+
+<img
+src="https://images.pexels.com/photos/4173624/pexels-photo-4173624.jpeg"
+loading="lazy">
+
+<div class="card-content">
+
+<h3>De-addiction Treatment</h3>
+
+<p>
+Comprehensive recovery programs for alcohol, cannabis, nicotine and other substance dependence as well as behavioural addictions like gambling and mobile/internet addiction.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img
+src="https://images.pexels.com/photos/3759657/pexels-photo-3759657.jpeg"
+loading="lazy">
+
+<div class="card-content">
+
+<h3>Anxiety, Depression & Stress</h3>
+
+<p>
+Evidence-based treatment with scientific approach for depression, anxiety disorders, OCD, panic attacks, stress-related symptoms for a lasting recovery.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img
+src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg"
+loading="lazy">
+
+<div class="card-content">
+
+<h3>Schizophrenia, Bipolar Disorders</h3>
+
+<p>
+Scientific and compassionate care for various types of psychotic disorders including schizophrenia, delusional disorder, bipolar mood disorders, aggression, violent behaviour etc.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="why" id="why">
+
+<div class="container">
+
+<h2>Why Choose Us</h2>
+
+<div class="features">
+
+<div class="feature">
+✔ Confidential Care
+</div>
+
+<div class="feature">
+✔ Evidence-Based Treatment
+</div>
+
+<div class="feature">
+✔ Personalized Approach
+</div>
+
+<div class="feature">
+✔ Compassionate Support
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="testimonials" id="reviews">
+
+<div class="container">
+
+<h2>Patient Feedback</h2>
+
+<div class="testimonial-grid">
+
+<div class="testimonial">
+⭐️⭐️⭐️⭐️⭐️ “I had a wonderful experience consulting Dr. Amit Sonawane. He patiently listened to my concerns and truly understood the challenges I have been facing since childhood.”
+</div>
+
+<div class="testimonial">
+⭐️⭐️⭐️⭐️⭐️ “Excellent psychiatrist. My IBS symptoms have improved greatly with treatment. Very understanding and helpful doctor.”
+</div>
+
+<div class="testimonial">
+⭐️⭐️⭐️⭐️⭐️ “Dr was very Good and kind person and treatment is very good anybody facing some health issues visit here.. thanks dr for better treatment.”
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<h2>Contact & Location</h2>
+
+<div class="contact-wrapper">
+
+<div class="contact-box">
+
+<p>
+
+<strong>Clinic Address:</strong>
+
+<br><br>
+
+Navi Mumbai Orthocare Hospital<br>
+
+3 & 3A, Siddhivinayak Utopia,<br>
+
+Plot No. 191, Sector 20,<br>
+
+Ulwe, Navi Mumbai
+
+</p>
+
+<br>
+
+<p>
+
+<strong>Phone:</strong><br>
+
++91 7977745715
+
+</p>
+
+<br>
+
+<p>
+
+<strong>Consultation: (By appointments only)</strong><br>
+
+Monday to Saturday 04:00 PM to 09:00 PM
+
+</p>
+
+<br>
+
+<p>
+<strong>Follow Us:</strong>
+</p>
+
+<div class="social-icons">
+
+<a href="https://instagram.com/dr.amit_sonawane_psychiatrist"
+target="_blank"
+class="instagram">
+
+<i class="fa-brands fa-instagram"></i>
+
+</a>
+
+<a href="https://www.facebook.com/share/1EdGtMcrjb/?mibextid=wwXIfr"
+target="_blank"
+class="facebook">
+
+<i class="fa-brands fa-facebook"></i>
+
+</a>
+
+<a href="https://share.google/wBHPc6NgYRR64TPSR"
+target="_blank"
+class="google">
+
+<i class="fa-brands fa-google"></i>
+
+</a>
+
+<a href="https://www.linkedin.com/in/amit-sonawane-7762ab118/"
+target="_blank"
+class="linkedin">
+
+<i class="fa-brands fa-linkedin"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.9742338182855!2d73.0273882!3d18.976745299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3b754ab003b%3A0x94a2b0333531787b!2sDr.%20Amit%20Sonawane!5e0!3m2!1sen!2sin!4v1780084082109!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Dr. Amit Sonawane | Consultant Psychiatrist
+</p>
+
+</footer>
+
+<a href="https://wa.me/917977745715"
+class="float-whatsapp">
+✆
+</a>
+
+</body>
+
+</html>
+```
