@@ -81,9 +81,6 @@ box-shadow:0 2px 12px rgba(0,0,0,0.06);
 display:flex;
 align-items:center;
 gap:10px;
-font-weight:700;
-font-size:1rem;
-color:var(--primary);
 flex:1;
 min-width:0;
 }
@@ -94,10 +91,22 @@ width:auto;
 display:block;
 }
 
-.logo span{
-white-space:nowrap;
-overflow:hidden;
-text-overflow:ellipsis;
+.logo-text{
+display:flex;
+flex-direction:column;
+line-height:1.1;
+}
+
+.logo-text .name{
+font-weight:700;
+font-size:1rem;
+color:var(--primary);
+}
+
+.logo-text .designation{
+font-size:0.8rem;
+font-weight:500;
+color:var(--text);
 }
 .header-btn{
 background:var(--accent);
@@ -464,6 +473,17 @@ header{
 padding:12px 15px;
 }
 
+@media(max-width:768px){
+
+.logo-text .name{
+font-size:0.9rem;
+}
+
+.logo-text .designation{
+font-size:0.72rem;
+}
+
+}
 .logo{
 font-size:0.9rem;
 }
@@ -570,7 +590,21 @@ bottom:16px;
 </script>
 </head>
 
-<body> <header> <div class="logo"> <img src="logo.webp" alt="Dr Amit Sonawane Logo"> <span> Dr. Amit Sonawane | Consultant Psychiatrist </span> </div> <a href="tel:+917977745715" class="header-btn"> Book Appointment </a> </header>
+<body>
+
+<header>
+
+<div class="logo">
+<img src="logo.webp" alt="Dr Amit Sonawane Logo">
+
+<div class="logo-text">
+<span class="name">Dr. Amit Sonawane</span>
+<span class="designation">Consultant Psychiatrist</span>
+</div>
+
+</div>
+
+<a href="tel:+917977745715" class="header-btn"> Book Appointment </a> </header>
 <nav class="index-nav">
 
 <a href="#home">Home</a>
@@ -801,7 +835,9 @@ He is committed to providing evidence-based, compassionate, and individualized c
 
 <div class="card">
 <div class="card-content">
-<img src="https://images.pexels.com/photos/31868677/pexels-photo-31868677.jpeg"> alt="Women's mental health and emotional wellbeing" loading="lazy">
+<img src="https://images.pexels.com/photos/31868677/pexels-photo-31868677.jpeg"
+alt="Women's mental health and emotional wellbeing"
+loading="lazy">
 <h3>Women's Mental Health</h3>
 <ul>
 <li>Pregnancy & Postpartum Mental Health</li>
@@ -902,7 +938,7 @@ He is committed to providing evidence-based, compassionate, and individualized c
 </div>
 
 </section>
-```
+
 
 <section class="why" id="why">
 
