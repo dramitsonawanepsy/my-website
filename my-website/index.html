@@ -78,11 +78,27 @@ box-shadow:0 2px 12px rgba(0,0,0,0.06);
 }
 
 .logo{
+display:flex;
+align-items:center;
+gap:10px;
 font-weight:700;
 font-size:1rem;
 color:var(--primary);
+flex:1;
+min-width:0;
 }
 
+.logo img{
+height:42px;
+width:auto;
+display:block;
+}
+
+.logo span{
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}
 .header-btn{
 background:var(--accent);
 color:white;
@@ -554,21 +570,7 @@ bottom:16px;
 </script>
 </head>
 
-<body>
-
-<header>
-
-<div class="logo">
-Dr. Amit Sonawane | Consultant Psychiatrist
-</div>
-
-<a href="tel:+917977745715"
-class="header-btn">
-Book Appointment
-</a>
-
-</header>
-
+<body> <header> <div class="logo"> <img src="logo.webp" alt="Dr Amit Sonawane Logo"> <span> Dr. Amit Sonawane | Consultant Psychiatrist </span> </div> <a href="tel:+917977745715" class="header-btn"> Book Appointment </a> </header>
 <nav class="index-nav">
 
 <a href="#home">Home</a>
@@ -674,59 +676,225 @@ He is committed to providing evidence-based, compassionate, and individualized c
 
 <div class="service-grid">
 
-<div class="card">
-
-<img
-src="https://images.pexels.com/photos/4173624/pexels-photo-4173624.jpeg"
-alt="De-addiction treatment and recovery"
-loading="lazy">
-
-<div class="card-content">
-
-<h3>De-addiction Treatment</h3>
-
-<p>
-Comprehensive recovery programs for alcohol, cannabis, nicotine and other substance dependence as well as behavioural addictions like gambling and mobile/internet addiction.
-</p>
-
-</div>
-
-</div>
+<!-- General Psychiatry -->
 
 <div class="card">
-
-<img
-src="https://images.pexels.com/photos/3759657/pexels-photo-3759657.jpeg"
-loading="lazy">
-
 <div class="card-content">
 
-<h3>Anxiety, Depression & Stress</h3>
-
-<p>
-Evidence-based treatment with scientific approach for depression, anxiety disorders, OCD, panic attacks, stress-related symptoms for a lasting recovery.
-</p>
-
+<img src="https://images.pexels.com/photos/5214995/pexels-photo-5214995.jpeg" alt="Psychiatric consultation and mental health assessment" loading="lazy">
+<h3>General Psychiatry</h3>
+<ul>
+<li>Psychiatric Consultation</li>
+<li>Comprehensive Mental Health Assessment</li>
+<li>Diagnosis & Treatment Planning</li>
+<li>Medication Management</li>
+</ul>
+</div>
 </div>
 
-</div>
+<!-- Therapy & Counselling -->
 
 <div class="card">
-
-<img
-src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg"
-loading="lazy">
-
 <div class="card-content">
-
-<h3>Schizophrenia, Bipolar Disorders</h3>
-
-<p>
-Scientific and compassionate care for various types of psychotic disorders including schizophrenia, delusional disorder, bipolar mood disorders, aggression, violent behaviour etc.
-</p>
-
+<img src="https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg" alt="Psychological counselling and psychotherapy session" loading="lazy">
+<h3>Therapy & Counselling</h3>
+<ul>
+<li>Individual Psychotherapy</li>
+<li>Psychological Counselling</li>
+<li>Supportive Therapy</li>
+<li>Stress Management Counselling</li>
+</ul>
+</div>
 </div>
 
+<!-- Anxiety & Stress Disorders -->
+
+<div class="card">
+<div class="card-content">
+<img src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg" alt="Anxiety disorder and stress management treatment" loading="lazy">
+<h3>Anxiety & Stress Disorders</h3>
+<ul>
+<li>Anxiety Disorder Treatment</li>
+<li>Panic Disorder Treatment</li>
+<li>Social Anxiety Treatment</li>
+<li>Phobia Management</li>
+<li>Stress-Related Disorders</li>
+</ul>
+</div>
+</div>
+
+<!-- Mood Disorders -->
+
+<div class="card">
+<div class="card-content">
+<img src="https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg" alt="Depression and bipolar disorder treatment" loading="lazy">
+<h3>Mood Disorders</h3>
+<ul>
+<li>Depression Treatment</li>
+<li>Bipolar Disorder Treatment</li>
+<li>Mood Disorder Management</li>
+</ul>
+</div>
+</div>
+
+<!-- OCD -->
+
+<div class="card">
+<div class="card-content">
+<img src="https://images.pexels.com/photos/7176319/pexels-photo-7176319.jpeg" alt="OCD and obsessive compulsive disorder treatment" loading="lazy">
+<h3>Obsessive & Related Disorders</h3>
+<ul>
+<li>OCD (Obsessive-Compulsive Disorder) Treatment</li>
+<li>Body-Focused Repetitive Behaviours</li>
+<li>Hoarding Disorder Management</li>
+</ul>
+</div>
+</div>
+
+<!-- Addiction -->
+
+<div class="card">
+<div class="card-content">
+<img src="https://images.pexels.com/photos/4173624/pexels-photo-4173624.jpeg" alt="Addiction treatment and recovery support" loading="lazy">
+<h3>Addiction & De-Addiction Services</h3>
+<ul>
+<li>Alcohol Dependence Treatment</li>
+<li>Tobacco/Nicotine De-Addiction</li>
+<li>Substance Use Disorder Treatment</li>
+<li>Relapse Prevention Programs</li>
+<li>Behavioural Addiction Management</li>
+</ul>
+</div>
+</div>
+
+<!-- Sleep Medicine -->
+
+<div class="card">
+<div class="card-content">
+<img src="https://images.pexels.com/photos/935777/pexels-photo-935777.jpeg" alt="Sleep disorder evaluation and insomnia treatment" loading="lazy">
+<h3>Sleep Medicine</h3>
+<ul>
+<li>Insomnia Treatment</li>
+<li>Sleep Disorder Evaluation</li>
+<li>Sleep Hygiene Counselling</li>
+</ul>
+</div>
+</div>
+
+<!-- Child Psychiatry -->
+
+<div class="card">
+<div class="card-content">
+<img src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg" alt="Child and adolescent mental health consultation" loading="lazy">
+<h3>Child & Adolescent Psychiatry</h3>
+<ul>
+<li>Child Behavioural Problems</li>
+<li>ADHD Assessment & Treatment</li>
+<li>Adolescent Emotional Issues</li>
+<li>School-Related Mental Health Concerns</li>
+<li>Parent Guidance & Counselling</li>
+</ul>
+</div>
+</div>
+
+<!-- Women Mental Health -->
+
+<div class="card">
+<div class="card-content">
+<img src="https://images.pexels.com/photos/31868677/pexels-photo-31868677.jpeg"> alt="Women's mental health and emotional wellbeing" loading="lazy">
+<h3>Women's Mental Health</h3>
+<ul>
+<li>Pregnancy & Postpartum Mental Health</li>
+<li>Premenstrual Mood Disorders</li>
+<li>Menopause-Related Mental Health Concerns</li>
+</ul>
+</div>
+</div>
+
+<!-- Geriatric -->
+
+<div class="card">
+<div class="card-content">
+<img src="https://images.pexels.com/photos/7551674/pexels-photo-7551674.jpeg" alt="Mental health care for older adults" loading="lazy">
+<h3>Geriatric Psychiatry</h3>
+<ul>
+<li>Mental Health Care for Older Adults</li>
+<li>Dementia Assessment</li>
+<li>Memory Problems Evaluation</li>
+<li>Depression & Anxiety in Elderly</li>
+</ul>
+</div>
+</div>
+
+<!-- Psychotic Disorders -->
+
+<div class="card">
+<div class="card-content">
+<img src="https://images.pexels.com/photos/6003263/pexels-photo-6003263.jpeg" alt="Schizophrenia and psychotic disorder treatment" loading="lazy">
+<h3>Psychotic Disorders</h3>
+<ul>
+<li>Schizophrenia Treatment</li>
+<li>Delusional Disorders</li>
+<li>Early Psychosis Intervention</li>
+</ul>
+</div>
+</div>
+
+<!-- Neuropsychiatry -->
+
+<div class="card">
+<div class="card-content">
+<img src="https://images.pexels.com/photos/8376237/pexels-photo-8376237.jpeg" alt="Memory and cognitive disorder assessment" loading="lazy">
+<h3>Neuropsychiatry</h3>
+<ul>
+<li>Memory & Cognitive Disorders</li>
+<li>Organic Brain Disorders</li>
+<li>Psychiatric Aspects of Neurological Illness</li>
+</ul>
+</div>
+</div>
+
+<!-- Sexual Health -->
+
+<div class="card">
+<div class="card-content">
+<img src="https://images.pexels.com/photos/31558934/pexels-photo-31558934.jpeg" alt="Relationship counselling and sexual health consultation" loading="lazy">
+<h3>Sexual Health & Relationship Issues</h3>
+<ul>
+<li>Sexual Dysfunction Counselling</li>
+<li>Marital & Relationship Counselling</li>
+<li>Premarital Counselling</li>
+</ul>
+</div>
+</div>
+
+<!-- Emergency -->
+
+<div class="card">
+<div class="card-content">
+<img src="https://images.pexels.com/photos/6964126/pexels-photo-6964126.jpeg" alt="Emergency psychiatric evaluation and crisis intervention" loading="lazy">
+<h3>Emergency & Crisis Care</h3>
+<ul>
+<li>Suicidal Crisis Assessment</li>
+<li>Acute Psychiatric Evaluation</li>
+<li>Crisis Intervention Services</li>
+</ul>
+</div>
+</div>
+
+<!-- Wellness -->
+
+<div class="card">
+<div class="card-content">
+<img src="https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg" alt="Mental wellness and mindfulness based interventions" loading="lazy">
+<h3>Lifestyle & Wellness</h3>
+<ul>
+<li>Stress Reduction Programs</li>
+<li>Work-Life Balance Counselling</li>
+<li>Mental Wellness Promotion</li>
+<li>Mindfulness-Based Interventions</li>
+</ul>
+</div>
 </div>
 
 </div>
@@ -734,6 +902,7 @@ Scientific and compassionate care for various types of psychotic disorders inclu
 </div>
 
 </section>
+```
 
 <section class="why" id="why">
 
